@@ -13,12 +13,10 @@ require_once __DIR__ . '/inicio-html.php';
             <a href="<?= $video->url;  ?>">
                 <img src="/img/uploads/<?= $video->getFilePath(); ?>" alt="" style="width: 100%"/>
             </a>
-                    <a href="/remover-thumbnail?id=<?= $video->id; ?>"
-                       onclick="return confirm('Quer mesmo remover essa thumb?')"
-                       class="botao-remover">Remover Thumbnail
-                    </a>
+                <a href="/remover-thumbnail?id=<?= $video->id; ?>" onclick="return confirm('Tem certeza que quer remover a thumb?');" class="botao_remover">Remover Thumbnail</a>
 
-                <?php else: ?>
+
+            <?php else: ?>
             <iframe width="100%" height="72%" src="<?= $video->url; ?>"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
