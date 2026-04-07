@@ -13,6 +13,7 @@ $builder->addDefinitions([
     Engine::class => function () {
         $templatePath = __DIR__ . '/../views';
         return new League\Plates\Engine($templatePath);
+
         // return new League\Plates\Engine($templatePath); // é uma forma de fazer, mas como ja tem no USE, não precisa necessariamente //
     }
 ]);
