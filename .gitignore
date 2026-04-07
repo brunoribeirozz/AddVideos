@@ -1,0 +1,5 @@
+/vendor/
+/banco.sqlite
+.idea/
+/public/img/uploads/*
+!/public/img/uploads/.gitkeep
